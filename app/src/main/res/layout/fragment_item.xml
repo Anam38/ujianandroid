@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/images"
+                    android:src="@drawable/gambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="fitXY"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="11dp"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imgchannel"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logo"/>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                    <TextView
+                            android:id="@+id/title"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:text="Title"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold"/>
+
+                    <ImageView
+                            android:paddingTop="10dp"
+                            android:src="@drawable/ic_titik"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:paddingTop="10dp"
+                            android:layout_below="@id/title"
+                            android:id="@+id/channeltitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Account mtube"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorabu"/>
+
+                    <TextView
+                            android:layout_below="@id/channeltitle"
+                            android:gravity="end"
+                            android:id="@+id/time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorabu"/>
+                </RelativeLayout>
+            </LinearLayout>
+</LinearLayout>

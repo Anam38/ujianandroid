@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:background="#fff"
+              android:layout_height="match_parent"
+              android:elevation="10dp"
+              android:paddingLeft="0dp"
+              android:orientation="vertical">
+
+    <include
+            android:id="@+id/include_toolbar_search"
+            layout="@layout/searchbar"/>
+
+    <TextView
+
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category :"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+        <android.support.v7.widget.CardView
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_row="1"
+                android:layout_column="0">
+
+            <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/button_effect">
+                <ImageButton
+                        android:id="@+id/btnsearchmusic"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_music"
+                        android:background="?android:selectableItemBackground"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Music"
+                        android:gravity="center"/>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_row="1"
+                android:layout_column="0">
+
+            <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:orientation="vertical">
+                <ImageButton
+                        android:id="@+id/btnsearchgame"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_game"
+                        android:background="?android:selectableItemBackground"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Games"
+                        android:gravity="center"/>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_row="1"
+                android:layout_column="0">
+
+            <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:orientation="vertical">
+                <ImageButton
+                        android:id="@+id/btnsearchberita"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_new"
+                        android:background="?android:selectableItemBackground"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="News"
+                        android:gravity="center"/>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_row="1"
+                android:layout_column="0">
+
+            <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:orientation="vertical">
+                <ImageButton
+                        android:id="@+id/btnsearcmovie"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_movie"
+                        android:background="?android:selectableItemBackground"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Videos"
+                        android:gravity="center"/>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+        <android.support.v7.widget.CardView
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_row="1"
+                android:layout_column="0">
+
+            <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:orientation="vertical">
+                <ImageButton
+                        android:id="@+id/btnsearcsport"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_sport"
+                        android:background="?android:selectableItemBackground"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sports"
+                        android:gravity="center"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

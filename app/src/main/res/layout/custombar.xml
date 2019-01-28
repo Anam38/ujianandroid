@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="50dp"
+                android:elevation="10dp"
+                android:paddingLeft="0dp">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/logomtube"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logoandtulisan"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>
+    </LinearLayout>
+    <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20sp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/account"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logo"
+            android:background="@drawable/circle"/>
+
+    <ImageButton
+            android:layout_toLeftOf="@id/account"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/btnsearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:pointerIcon="vertical_text"
+            android:src="@drawable/ic_search_black_24dp"
+            android:background="@drawable/button_effect"
+            android:clickable="true"/>
+
+</RelativeLayout>

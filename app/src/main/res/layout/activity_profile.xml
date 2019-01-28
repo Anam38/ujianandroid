@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        tools:context=".UI.View.profile.profileActivity">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/backgroudprofile"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton
+                android:id="@+id/backprofile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_backwhite"
+                android:background="@drawable/button_effect"/>
+
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/imgprofile"
+            android:layout_marginTop="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+            android:id="@+id/atas"
+            android:layout_below="@id/imgprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp">
+        <TextView
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="25sp"
+                android:id="@+id/usernameprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khoirul Anam"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/lfavorite"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_below="@+id/atas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:src="@drawable/ic_favorite"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="Favorite"
+                android:textSize="20dp"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_next"
+                android:background="@drawable/button_effect"/>
+
+    </LinearLayout>
+    <View
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/garis2"
+            android:layout_below="@id/lfavorite"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" android:layout_marginTop="2dp"/>
+    <LinearLayout
+            android:id="@+id/llike"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_below="@+id/lfavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:src="@drawable/ic_like"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="Like"
+                android:textSize="20dp"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_next"
+                android:background="@drawable/button_effect"/>
+
+    </LinearLayout>
+    <View
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/garis3"
+            android:layout_below="@id/llike"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" android:layout_marginTop="2dp"/>
+
+    <LinearLayout
+            android:id="@+id/lunlike"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_below="@+id/llike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:src="@drawable/ic_distlike"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="Dislike"
+                android:textSize="20dp"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_next"
+                android:background="@drawable/button_effect"/>
+
+    </LinearLayout>
+    <View
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/garis4"
+            android:layout_below="@id/lunlike"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" android:layout_marginTop="2dp"/>
+    <LinearLayout
+            android:id="@+id/lcomment"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_below="@+id/lunlike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:src="@drawable/ic_commen"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:textSize="20dp"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_next"
+                android:background="@drawable/button_effect"/>
+
+    </LinearLayout>
+    <View
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/garis5"
+            android:layout_below="@id/lcomment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" android:layout_marginTop="2dp"/>
+    <LinearLayout
+            android:id="@+id/ledit"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_below="@+id/lcomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:src="@drawable/ic_edit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="20dp"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_next"
+                android:background="@drawable/button_effect"/>
+
+    </LinearLayout>
+    <View
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/garis6"
+            android:layout_below="@id/ledit"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" android:layout_marginTop="2dp"/>
+
+    <Button
+            android:layout_margin="20sp"
+            android:id="@+id/btnsignout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/garis6"
+            android:background="#6b6b6b"
+            android:text="Sign Out"
+            android:textColor="#fff"/>
+</RelativeLayout>

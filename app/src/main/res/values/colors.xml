@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#545454</color>
+    <color name="colorPrimaryDark">#6b6b6b</color>
+    <color name="colorAccent">#545454</color>
+    <color name="colorprimarydarkdark">#5ec5f5</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorabu">#212121</color>
+
+    //customebar
+    <color name="colorstart">#ff2d9a59</color>
+    <color name="colorcenter">#ff42959a</color>
+    <color name="colorend">#ff23729a</color>
+
+</resources>

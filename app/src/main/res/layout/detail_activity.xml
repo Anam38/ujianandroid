@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <include
+            android:id="@+id/include_toolbar"
+            layout="@layout/customebardetail"/>
+
+    <view
+            android:id="@+id/viewvideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            class="com.google.android.youtube.player.YouTubePlayerView"/>
+
+
+
+        <RelativeLayout
+                android:id="@+id/contentdetail"
+                android:layout_below="@+id/viewvideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+            <TextView
+                    android:id="@+id/titledetail"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+
+            <ImageView
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_titik"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:paddingTop="10dp"
+                    android:layout_below="@id/titledetail"
+                    android:id="@+id/deskripsidetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorabu"/>
+            <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/deskripsidetail"
+                    android:gravity="end"
+                    android:id="@+id/timedetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorabu"/>
+
+            <LinearLayout
+                    android:id="@+id/relatifchannel"
+                    android:layout_below="@id/timedetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="11dp"
+                        android:id="@+id/imgchanneldetail"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logo"/>
+
+                <TextView
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:id="@+id/channeltitledetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorabu"
+                        android:textStyle="bold"/>
+            </LinearLayout>
+
+            <View
+                    android:id="@+id/garis1"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/relatifchannel"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                    android:id="@+id/menulike"
+                    android:layout_below="@id/garis1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageButton
+                            android:layout_marginLeft="30sp"
+                            android:id="@+id/viewer"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_view"
+                            android:background="@drawable/button_effect"/>
+
+                    <TextView
+                            android:paddingTop="5dp"
+                            android:paddingLeft="30dp"
+                            android:layout_below="@id/viewer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2.340"
+                            android:gravity="center"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:paddingLeft="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <ImageButton
+                            android:layout_marginLeft="30sp"
+                            android:id="@+id/like"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_like"
+                            android:background="@drawable/button_effect"/>
+
+                    <TextView
+                            android:paddingTop="5dp"
+                            android:paddingLeft="25dp"
+                            android:layout_below="@id/like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="243.000"
+                            android:gravity="center"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <ImageButton
+                            android:layout_marginLeft="30sp"
+                            android:id="@+id/distlike"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_distlike"
+                            android:background="@drawable/button_effect"/>
+
+                    <TextView
+                            android:paddingTop="5dp"
+                            android:paddingLeft="25dp"
+                            android:layout_below="@id/distlike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="233.000"
+                            android:gravity="center"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageButton
+                            android:layout_marginLeft="30sp"
+                            android:id="@+id/favorite"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_favorite"
+                            android:background="@drawable/button_effect"/>
+
+                    <TextView
+                            android:paddingTop="5dp"
+                            android:paddingLeft="20dp"
+                            android:layout_below="@id/favorite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Favorite"
+                            android:gravity="center"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                    android:layout_margin="5dp"
+                    android:id="@+id/garis2"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/menulike"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+            <TextView
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/garis2"
+                    android:id="@+id/tontonlainnya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nonton video Lainnya :"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerviewdetail"
+                    android:layout_below="@id/tontonlainnya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="50dp"
+                android:elevation="10dp"
+                android:paddingLeft="0dp">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:layout_toLeftOf="@id/account"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20sp"
+                android:id="@+id/btnbacksearch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:pointerIcon="vertical_text"
+                android:src="@drawable/ic_back"
+                android:background="@drawable/button_effect"
+                android:clickable="true"/>
+
+        <EditText
+                android:paddingLeft="7sp"
+                android:id="@+id/inputsearch"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:hint="Searching"/>
+    </LinearLayout>
+
+    <ImageButton
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/btnsearchvideo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:pointerIcon="vertical_text"
+            android:src="@drawable/ic_search_black_24dp"
+            android:background="@drawable/button_effect"
+            android:clickable="true"/>
+
+</RelativeLayout>
